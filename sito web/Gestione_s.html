@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ali Carrozzeria</title>
+
+  <meta name="description" content="Ali Carrozzeria a Domodossola: gestione sinistri completa, zero burocrazia, auto sostitutiva immediata. Chiama ora.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="icons8-auto-64.png">
+
+  <!-- Schema LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoBodyShop",
+    "name": "Ali Carrozzeria",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Dell'Artigianato 4",
+      "addressLocality": "Domodossola",
+      "postalCode": "28845",
+      "addressCountry": "IT"
+    },
+    "telephone": "+39032446050",
+    "openingHours": "Mo-Fr 08:00-18:30, Sa 08:00-12:00",
+    "url": "https://www.alicarrozzeria.com"
+  }
+  </script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-black">
+    <div class="logo-center">
+      <img src="ali_logo3.png" alt="Logo Autocarrozzeria Ali">
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="News.html">News</a>
+      <button id="toggleServizi" class="btn-servizi">Servizi</button>
+      <a href="Contact.html">Contattaci</a>
+    </nav>
+  </div>
+
+  <div class="convenzioni-bar">
+    <div class="convenzioni-inner">
+      <span class="convenzioni-label">Gestiamo sinistri con</span>
+      <div class="convenzioni-logos">
+        <img src="Logo_Generali_group.png" alt="Generali">
+        <img src="aldautomotive.jpg" alt="ALD Automotive">
+        <img src="unipolsaipng.png" alt="UnipolSai">
+        <img src="leasys.png" alt="Leasys">
+        <img src="ARVAL.png" alt="Arval">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MENU LATERALE -->
+<div class="side-menu" id="sideMenu">
+  <a href="Gestione_s.html" class="active">Gestione sinistri</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="AutoSostitutiva.html">Auto sostitutiva</a>
+  <a href="il_lavoro.html">Il lavoro in carrozzeria</a>
+</div>
+<div id="overlay"></div>
+
+<!-- HERO -->
+<section class="contact-hero">
+  <div class="contact-container">
+    <h1>Gestione sinistri a Domodossola</h1>
+    <p>Dall’incidente alla riconsegna dell’auto: una chiamata e pensiamo a tutto noi.</p>
+  </div>
+</section>
+
+<!-- CONTENUTO PRINCIPALE -->
+<section class="sinistri-section">
+  <div class="container">
+
+    <h2>Zero burocrazia. Zero perdite di tempo.</h2>
+    <p class="sinistri-intro">
+      Se hai avuto un incidente, la priorità è rimettere l’auto in strada e chiudere la pratica
+      senza stress. Gestiamo direttamente assicurazione, perito e documentazione. Tu consegni
+      l’auto, noi ci occupiamo del resto.
+    </p>
+
+    <div class="sinistri-grid">
+
+      <div class="sinistro-box">
+        <h3>Apertura pratica immediata</h3>
+        <p>
+          Verifichiamo la copertura assicurativa, apriamo il sinistro e raccogliamo tutta la
+          documentazione necessaria. Un solo referente, nessun rimbalzo tra uffici.
+        </p>
+      </div>
+
+      <div class="sinistro-box">
+        <h3>Rapporti con assicurazioni e periti</h3>
+        <p>
+          Ci interfacciamo direttamente con la compagnia e con il perito. Preventivo,
+          foto e autorizzazioni: gestiamo noi ogni passaggio fino al via libera.
+        </p>
+      </div>
+
+      <div class="sinistro-box">
+        <h3>Riparazione certificata</h3>
+        <p>
+          Ripristiniamo l’auto con ricambi di qualità e verniciatura professionale.
+          Tempi chiari e aggiornamenti costanti sullo stato dei lavori.
+        </p>
+      </div>
+
+      <div class="sinistro-box">
+        <h3>Auto sostitutiva disponibile</h3>
+        <p>
+          Se il veicolo resta fermo, mettiamo a disposizione un’auto sostitutiva.
+          Continui a muoverti senza blocchi mentre sistemiamo la tua.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="sinistri-highlight">
+      <h3>Cessione del credito quando possibile</h3>
+      <p>
+        In molti casi possiamo lavorare con pagamento diretto dell’assicurazione.
+        Valutiamo subito la tua situazione e ti diciamo con chiarezza come procedere.
+        Nessuna sorpresa a fine lavoro.
+      </p>
+    </div>
+
+    <div class="sinistri-cta">
+      <h3>Hai appena avuto un incidente?</h3>
+      <p>Prima ci contatti, prima rimettiamo l’auto in strada.</p>
+      <div class="cta-buttons">
+        <a href="tel:032446050" class="btn-primary">Chiama subito</a>
+        <a href="Contact.html" class="btn-secondary">Richiedi assistenza</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer container">
+  <p>&copy; 2026 Carrozzeria Ali. Tutti i diritti riservati.</p>
+</footer>
+
+<script>
+const btnServizi = document.getElementById("toggleServizi");
+const sideMenu = document.getElementById("sideMenu");
+const overlay = document.getElementById("overlay");
+
+function toggleMenu() {
+  sideMenu.classList.toggle("open");
+  overlay.classList.toggle("active");
+}
+
+btnServizi.addEventListener("click", toggleMenu);
+overlay.addEventListener("click", toggleMenu);
+</script>
+
+</body>
+</html>

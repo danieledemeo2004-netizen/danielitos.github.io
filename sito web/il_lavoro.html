@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ali Carrozzeria</title>
+
+  <meta name="description" content="Ali Carrozzeria a Domodossola: verniciatura, lucidatura, sostituzione cristalli e riparazioni professionali. Chiama ora.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="icons8-auto-64.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoBodyShop",
+    "name": "Ali Carrozzeria",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Dell'Artigianato 4",
+      "addressLocality": "Domodossola",
+      "postalCode": "28845",
+      "addressCountry": "IT"
+    },
+    "telephone": "0324 46050",
+    "openingHours": "Mo-Fr 08:00-18:30, Sa 08:00-12:00",
+    "url": "https://www.alicarrozzeria.com"
+  }
+  </script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-black">
+    <div class="logo-center">
+      <img src="ali_logo3.png" alt="Logo Autocarrozzeria Ali">
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="News.html">News</a>
+      <button id="toggleServizi" class="btn-servizi">Servizi</button>
+      <a href="Contact.html">Contattaci</a>
+    </nav>
+  </div>
+
+  <div class="convenzioni-bar">
+    <div class="convenzioni-inner">
+      <span class="convenzioni-label">Collaboriamo con</span>
+      <div class="convenzioni-logos">
+        <img src="Logo_Generali_group.png" alt="Generali">
+        <img src="aldautomotive.jpg" alt="ALD Automotive">
+        <img src="unipolsaipng.png" alt="UnipolSai">
+        <img src="leasys.png" alt="Leasys">
+        <img src="ARVAL.png" alt="Arval">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MENU LATERALE -->
+<div class="side-menu" id="sideMenu">
+  <a href="Gestione_s.html">Gestione sinistri</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="AutoSostitutiva.html">Auto sostitutiva</a>
+  <a href="il_lavoro.html" class="active">Lavori in carrozzeria</a>
+</div>
+<div id="overlay"></div>
+
+<!-- HERO -->
+<section class="contact-hero">
+  <div class="contact-container">
+    <h1>Lavori in Carrozzeria a Domodossola</h1>
+    <p>Dalla verniciatura alla sostituzione dei cristalli: riportiamo la tua auto come nuova.</p>
+  </div>
+</section>
+
+<!-- CONTENUTO PRINCIPALE -->
+<section class="sinistri-section">
+  <div class="container">
+
+    <h2>Riparazioni rapide e professionali</h2>
+    <p class="sinistri-intro">
+      Ali Carrozzeria si prende cura della tua auto in ogni dettaglio. Dalla sostituzione di cristalli alla verniciatura, dalla lucidatura alla riparazione di ammaccature, tutto viene fatto con professionalità, strumenti all’avanguardia e materiali di qualità.
+    </p>
+
+    <div class="sinistri-grid">
+
+      <div class="sinistro-box">
+        <h3>Verniciatura e ritocchi</h3>
+        <p>
+          Ripristiniamo la carrozzeria con verniciatura professionale, trattamenti anti-corrosione e finiture perfette. Il colore originale torna splendente come nuovo.
+        </p>
+      </div>
+
+      <div class="sinistro-box">
+        <h3>Lucidatura e detailing</h3>
+        <p>
+          Eliminazione di graffi superficiali, lucidatura completa e trattamenti protettivi. La tua auto mantiene brillantezza e valore nel tempo.
+        </p>
+      </div>
+
+      <div class="sinistro-box">
+        <h3>Sostituzione cristalli</h3>
+        <p>
+          Parabrezza e vetri danneggiati? Li sostituiamo con vetri di qualità e montaggio certificato, garantendo sicurezza e visibilità ottimale.
+        </p>
+      </div>
+
+      <div class="sinistro-box">
+        <h3>Riparazioni carrozzeria</h3>
+        <p>
+          Piccoli o grandi danni? Ripariamo ammaccature, urti e danni vari con tecniche moderne, senza compromettere l’integrità della tua auto.
+        </p>
+      </div>
+
+      <div class="sinistro-box">
+        <h3>Pulizia interni e cerchi</h3>
+        <p>
+          Ci prendiamo cura di ogni dettaglio per darti la sensazione di guidare un’auto come nuova: dall’aspirazione profonda dell’ abitacolo alla spolveratura minuziosa del cruscotto e delle plastiche.<br>Rifiniamo il lavoro con la lucidatura dei cerchi e il lavaggio dei vetri, garantendo un’igiene impeccabile e un’esperienza di guida sempre piacevole.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="sinistri-highlight">
+      <h3>Qualità certificata</h3>
+      <p>
+        Tutti i lavori sono effettuati con materiali e ricambi originali o di qualità equivalente, nel rispetto degli standard di sicurezza e durata.
+      </p>
+    </div>
+
+    <div class="sinistri-cta">
+      <h3>Vuoi un preventivo rapido?</h3>
+      <p>Contattaci subito e scopri come possiamo riportare la tua auto come nuova.</p>
+      <div class="cta-buttons">
+        <a href="tel:032446050" class="btn-primary">Chiama subito</a>
+        <a href="Contact.html" class="btn-secondary">Richiedi preventivo</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer container">
+  <p>&copy; 2026 Carrozzeria Ali. Tutti i diritti riservati.</p>
+</footer>
+
+<script>
+const btnServizi = document.getElementById("toggleServizi");
+const sideMenu = document.getElementById("sideMenu");
+const overlay = document.getElementById("overlay");
+
+function toggleMenu() {
+  sideMenu.classList.toggle("open");
+  overlay.classList.toggle("active");
+}
+
+btnServizi.addEventListener("click", toggleMenu);
+overlay.addEventListener("click", toggleMenu);
+</script>
+
+</body>
+</html>

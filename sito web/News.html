@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alì Carrozzeria - News e Ultime Novità</title>
+
+  <meta name="description" content="Rimani aggiornato su notizie, consigli di manutenzione auto, novità su sinistri e servizi offerti da Alì Carrozzeria a Domodossola.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="icons8-auto-64.png">
+
+  <!-- Dati strutturati per SEO (Blog) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "News Alì Carrozzeria",
+    "description": "Notizie, consigli e novità dal mondo dell'automotive e dei servizi di carrozzeria a Domodossola.",
+    "publisher": {
+      "@type": "AutoBodyShop",
+      "name": "Alì Carrozzeria",
+      "url": "https://www.alicarrozzeria.com"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-black">
+    <div class="logo-center">
+      <img src="ali_logo3.png" alt="Logo Autocarrozzeria Ali">
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="News.html" class="active">News</a>
+      <button type="button" id="toggleServizi" class="btn-servizi" aria-expanded="false" aria-controls="sideMenu">Servizi</button>
+      <a href="Contact.html">Contattaci</a>
+    </nav>
+  </div>
+
+  <div class="convenzioni-bar">
+    <div class="convenzioni-inner">
+      <span class="convenzioni-label">Gestiamo sinistri con</span>
+      <div class="convenzioni-logos">
+        <img src="Logo_Generali_group.png" alt="Generali">
+        <img src="aldautomotive.jpg" alt="ALD Automotive">
+        <img src="unipolsaipng.png" alt="UnipolSai">
+        <img src="leasys.png" alt="Leasys">
+        <img src="ARVAL.png" alt="Arval">
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="side-menu" id="sideMenu" aria-hidden="true">
+  <a href="Gestione_s.html">Gestione sinistri</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="AutoSostitutiva.html">Auto sostitutiva</a>
+  <a href="il_lavoro.html">Il lavoro in carrozzeria</a>
+</div>
+<div id="overlay"></div>
+
+<!-- SEZIONE PRINCIPALE NEWS -->
+<section class="news-content">
+  <div class="news-container">
+    
+    <div class="news-header">
+      <h1>News & Consigli Utili</h1>
+      <p>Scopri le nostre ultime novità, tra cura sul veicolo, nuove convenzioni...</p>
+    </div>
+
+    <div class="news-grid">
+
+        <!-- Articolo 1 -->
+      <article class="news-card">
+        <div class="news-image">
+          <img src="fari.jpg" alt="">
+        </div>
+        <div class="news-body">
+          <span class="news-date">Nuovo</span>
+          <h2>Come risparmiare denaro con la rigenerazione dei fari</h2>
+          <p>Prima di cambiare i fari della tua auto, leggi questo: potresti risparmiare un piccolo capitale grazie a un semplice intervento.</p>
+          <a href="fari_annuncio.html" class="news-link">Guarda di più &rarr;</a>
+        </div>
+      </article>
+     
+
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer container">
+  <p>&copy; 2026 Carrozzeria Ali. Tutti i diritti riservati.</p>
+</footer>
+
+<script>
+  // Gestione Side Menu
+  const btnServizi = document.getElementById("toggleServizi");
+  const sideMenu = document.getElementById("sideMenu");
+  const overlay = document.getElementById("overlay");
+  
+  function toggleMenu() {
+    const isOpen = sideMenu.classList.toggle("open");
+    overlay.classList.toggle("active");
+    
+    btnServizi.setAttribute("aria-expanded", isOpen);
+    sideMenu.setAttribute("aria-hidden", !isOpen);
+  }
+  
+  btnServizi.addEventListener("click", toggleMenu);
+  overlay.addEventListener("click", toggleMenu);
+</script>
+
+</body>
+</html>

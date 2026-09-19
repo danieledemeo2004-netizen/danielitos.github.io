@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrozzeria Alì - Riparazioni Auto e Gestione Sinistri a Domodossola</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="icons8-auto-64.png">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-black">
+    <div class="logo-center">
+      <a href="index.html">
+        <img src="ali_logo3.png" alt="Logo Autocarrozzeria Ali">
+      </a>
+    </div>
+
+    <!-- NAV CON PULSANTE SERVIZI -->
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="News.html">News</a>
+      <button id="toggleServizi" class="btn-servizi" aria-expanded="false" aria-controls="sideMenu">Servizi</button>
+      <a href="Contact.html">Contattaci</a>
+    </nav>
+  </div>
+
+  <div class="convenzioni-bar">
+    <div class="convenzioni-inner">
+      <span class="convenzioni-label">Gestiamo i nostri sinistri con</span>
+
+      <div class="convenzioni-logos">
+        <img src="Logo_Generali_group.png" alt="Generali" loading="lazy">
+        <img src="aldautomotive.jpg" alt="ALD Automotive" loading="lazy">
+        <img src="unipolsaipng.png" alt="UnipolSai" loading="lazy">
+        <img src="leasys.png" alt="Leasys" loading="lazy">
+        <img src="ARVAL.png" alt="Arval" loading="lazy">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MENU LATERALE -->
+<aside class="side-menu" id="sideMenu" aria-label="Menu Servizi">
+  <a href="Gestione_s.html">Gestione sinistri</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="AutoSostitutiva.html">Auto sostitutiva</a>
+  <a href="il_lavoro.html">Il lavoro in carrozzeria</a>
+</aside>
+
+<!-- OVERLAY -->
+<div id="overlay" aria-hidden="true"></div>
+
+<main>
+  <!-- HERO SECTION CON BADGE GOOGLE 4.9 -->
+  <section class="hero hero-two-columns container">
+    <div class="hero-left">
+      <div class="hero-text">
+        <h1>Riparazioni auto e gestione sinistri a Domodossola</h1>
+        <p class="hero-subtitle">
+          Professionalità, precisione e auto sostitutiva. Ci occupiamo della tua auto e di tutte le pratiche assicurative senza pensieri.
+        </p>
+        <div class="hero-cta-group">
+          <a href="Contact.html" class="btn-preventivo">Richiedi un Preventivo Rapido</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOX RATING GOOGLE REALE -->
+    <div class="hero-right">
+      <div class="google-trust-box">
+        <div class="google-header">
+          <svg class="google-icon" viewBox="0 0 24 24" width="36" height="36">
+            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+          </svg>
+          <div class="google-title">
+            <span class="badge-tag">Recensioni Verificate</span>
+            <h3>Eccellenza Google</h3>
+          </div>
+        </div>
+
+        <div class="rating-score-container">
+          <span class="big-score">4.9</span>
+          <div class="stars-wrapper">
+            <span class="stars-gold">★★★★★</span>
+            <span class="review-sub">Valutazione dei nostri clienti</span>
+          </div>
+        </div>
+
+        <p class="google-quote">
+          "La migliore carrozzeria del territorio per precisione, disponibilità e gestione completa delle pratiche."
+        </p>
+
+        <a href="https://share.google/jzIIjYT2ysk0fSBUo" target="_blank" rel="noopener" class="btn-google-reviews">
+          Leggi le recensioni su Google
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE PERCHÉ SCEGLIERCI -->
+  <section class="features-section">
+    <div class="container">
+      <h2>Perché scegliere Carrozzeria Alì</h2>
+      <p class="intro">Trasparenza e massima cura per la tua auto dal primo contatto alla consegna.</p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🚗</div>
+          <h3>Auto Sostitutiva</h3>
+          <p>Non resti mai a piedi: ti garantiamo un veicolo di cortesia per tutto il tempo della riparazione.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📋</div>
+          <h3>Gestione Sinistri Zero Pensieri</h3>
+          <p>Gestiamo direttamente le pratiche con la tua assicurazione senza anticipo di denaro.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3>Riparazioni a Regola d'Arte</h3>
+          <p>Attrezzature moderne, verniciatura di alta qualità e ripristino fari per la massima sicurezza.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE LA NOSTRA STRUTTURA & STORIA -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="badge-tag">Tradizione & Innovazione</span>
+          <h2>Esperienza e Strutture all'Avanguardia</h2>
+          <p>
+            Autocarrozzeria Alì nasce a Domodossola con l'obiettivo di offrire un servizio completo e trasparente per la cura del tuo veicolo. Negli anni abbiamo continuamente aggiornato i nostri impianti e le nostre competenze per garantire riparazioni di altissima qualità.
+          </p>
+          <p>
+            Dall'accettazione del veicolo al reparto di verniciatura e lucidatura, ogni spazio è organizzato per ridurre i tempi di attesa e garantire uno standard di sicurezza impeccabile.
+          </p>
+        </div>
+        <div class="about-highlights">
+          <div class="about-box">
+            <h4>🏢 Struttura Moderna</h4>
+            <p>Attrezzature di diagnosi e banchi di riscontro all'avanguardia per ogni tipologia di vettura.</p>
+          </div>
+          <div class="about-box">
+            <h4>🤝 Assistenza Dedicata</h4>
+            <p>Un team sempre a disposizione per pratiche burocratiche, preventivi e auto sostitutive.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE COME LAVORIAMO -->
+  <section class="process-section">
+    <div class="container">
+      <h2>Come Lavoriamo</h2>
+      <p class="intro">Trasparenza, efficienza e zero pensieri in 4 semplici passaggi.</p>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="process-number">01</div>
+          <h3>Contatto & Valutazione</h3>
+          <p>Analizziamo il danno del veicolo, valutiamo l'intervento e definiamo un preventivo chiaro e trasparente.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-number">02</div>
+          <h3>Gestione Pratiche</h3>
+          <p>Ci interfacciamo direttamente con la tua compagnia di assicurazione per azzerare la burocrazia.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-number">03</div>
+          <h3>Auto Sostitutiva</h3>
+          <p>Ti consegniamo una vettura di cortesia per garantirti la massima mobilità durante la riparazione.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-number">04</div>
+          <h3>Riconsegna Impeccabile</h3>
+          <p>Eseguiamo la riparazione a regola d'arte, il controllo qualità finale e ti riconsegniamo l'auto come nuova.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE ANTEPRIMA GALLERY (PRIMA E DOPO) -->
+  <section class="home-gallery-section">
+    <div class="container">
+      <div class="home-gallery-header">
+        <span class="badge-tag">I Nostri Lavori</span>
+        <h2>Prima e Dopo: Guarda Come Tornano Nuove</h2>
+        <p class="home-gallery-desc">
+          Trascina il cursore sulle immagini per scoprire la trasformazione dei veicoli riparati nella nostra carrozzeria.
+        </p>
+      </div>
+
+      <div class="home-gallery-preview">
+        <!-- Anteprima 1 -->
+        <div class="preview-card">
+          <div class="img-comparison-container" tabindex="0">
+            <div class="img-container img-after">
+              <img src="img/riparata1.jpg" alt="Auto Riparata">
+              <span class="img-badge badge-after">Dopo</span>
+            </div>
+            <div class="img-container img-before">
+              <img src="img/rotta1.jpg" alt="Auto Danneggiata">
+              <span class="img-badge badge-before">Prima</span>
+            </div>
+            <input type="range" min="0" max="100" value="50" class="slider" aria-label="Confronto prima e dopo">
+            <div class="slider-button"></div>
+          </div>
+          <div class="preview-info">
+            <h3>Ripristino Fiancata e Verniciatura</h3>
+          </div>
+        </div>
+
+        <!-- Anteprima 2 -->
+        <div class="preview-card">
+          <div class="img-comparison-container" tabindex="0">
+            <div class="img-container img-after">
+              <img src="img/riparata2.jpg" alt="Auto Riparata">
+              <span class="img-badge badge-after">Dopo</span>
+            </div>
+            <div class="img-container img-before">
+              <img src="img/rotta2.jpg" alt="Auto Danneggiata">
+              <span class="img-badge badge-before">Prima</span>
+            </div>
+            <input type="range" min="0" max="100" value="50" class="slider" aria-label="Confronto prima e dopo">
+            <div class="slider-button"></div>
+          </div>
+          <div class="preview-info">
+            <h3>Sostituzione e Verniciatura Paraurti</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-gallery-cta">
+        <a href="Gallery.html" class="btn-primary">Guarda tutti i lavori nella Gallery Completa &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE ULTIME NOTIZIE -->
+  <section class="home-news-section">
+    <div class="container">
+      <div class="home-news-box">
+        <div class="home-news-header">
+          <div>
+            <span class="badge-tag">In Evidenza</span>
+            <h3>Ultime News & Aggiornamenti</h3>
+          </div>
+          <a href="News.html" class="news-link-all">Tutte le Notizie &rarr;</a>
+        </div>
+
+        <div class="home-news-content">
+          <div class="news-meta-date">Nuovo</div>
+          <h4>Prima di cambiare i fari della tua auto, leggi questo:</h4>
+          <p>
+            potresti risparmiare un piccolo capitale grazie a un semplice intervento. 
+          </p>
+          <a href="News.html" class="news-read-btn">Leggi l'articolo completo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPPA E DOVE SIAMO -->
+  <section class="map-section container">
+    <div class="map-wrapper">
+      <div class="map-info">
+        <h2>Vieni a trovarci</h2>
+        <p><strong>Carrozzeria Alì</strong></p>
+        <p>📍 Domodossola (VB)</p>
+        <p>🕒 Lun - Ven: 08:00 - 12:00 | 14:00 - 18:30</p>
+        <a href="https://share.google/jzIIjYT2ysk0fSBUo" target="_blank" rel="noopener" class="btn-primary">Ottieni Indicazioni</a>
+      </div>
+
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.123456789!2d8.566789!3d46.066789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4787c123456789%3A0xabcdef123456789!2sVia%20Dell'Artigianato%204%2C%2028845%20Domodossola!5e0!3m2!1sit!2sit!4v1678901234567!5m2!1sit!2sit" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen 
+          loading="lazy"
+          title="Mappa della sede di Carrozzeria Ali">
+        </iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer container">
+  <p>&copy; 2026 Carrozzeria Ali. Tutti i diritti riservati.</p>
+</footer>
+
+<script>
+// Menu laterale
+const btnServizi = document.getElementById("toggleServizi");
+const sideMenu = document.getElementById("sideMenu");
+const overlay = document.getElementById("overlay");
+
+function toggleMenu() {
+  const isOpen = sideMenu.classList.toggle("open");
+  overlay.classList.toggle("active");
+  btnServizi.setAttribute("aria-expanded", isOpen);
+}
+
+btnServizi.addEventListener("click", toggleMenu);
+overlay.addEventListener("click", toggleMenu);
+
+// Slider Interattivo Prima/Dopo (Anteprima Home)
+document.querySelectorAll('.home-gallery-preview .img-comparison-container').forEach(container => {
+  const slider = container.querySelector('.slider');
+  const imgBefore = container.querySelector('.img-before');
+  const sliderButton = container.querySelector('.slider-button');
+
+  slider.addEventListener('input', (e) => {
+    const value = e.target.value;
+    imgBefore.style.width = value + '%';
+    sliderButton.style.left = value + '%';
+  });
+});
+</script>
+
+</body>
+</html>

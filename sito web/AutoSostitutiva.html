@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Sostitutiva - Ali Carrozzeria Domodossola</title>
+
+  <meta name="description" content="Auto sostitutiva a Domodossola: scopri i modelli disponibili e le condizioni per muoverti in serenità durante il fermo tecnico.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="icons8-auto-64.png">
+
+  <!-- Schema LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoBodyShop",
+    "name": "Ali Carrozzeria",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Dell'Artigianato 4",
+      "addressLocality": "Domodossola",
+      "postalCode": "28845",
+      "addressCountry": "IT"
+    },
+    "telephone": "+39032446050",
+    "openingHours": "Mo-Fr 08:00-18:30, Sa 08:00-12:00",
+    "url": "https://www.alicarrozzeria.com"
+  }
+  </script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-black">
+    <div class="logo-center">
+      <img src="ali_logo3.png" alt="Logo Autocarrozzeria Ali">
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="News.html">News</a>
+      <button id="toggleServizi" class="btn-servizi">Servizi</button>
+      <a href="Contact.html">Contattaci</a>
+    </nav>
+  </div>
+
+  <div class="convenzioni-bar">
+    <div class="convenzioni-inner">
+      <span class="convenzioni-label">Gestiamo sinistri con</span>
+      <div class="convenzioni-logos">
+        <img src="Logo_Generali_group.png" alt="Generali">
+        <img src="aldautomotive.jpg" alt="ALD Automotive">
+        <img src="unipolsaipng.png" alt="UnipolSai">
+        <img src="leasys.png" alt="Leasys">
+        <img src="ARVAL.png" alt="Arval">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MENU LATERALE -->
+<div class="side-menu" id="sideMenu">
+  <a href="Gestione_s.html">Gestione sinistri</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="AutoSostitutiva.html" class="active">Auto sostitutiva</a>
+  <a href="il_lavoro.html">Il lavoro in carrozzeria</a>
+</div>
+<div id="overlay"></div>
+
+<!-- HERO -->
+<section class="contact-hero">
+  <div class="contact-container">
+    <h1>Auto sostitutiva a Domodossola</h1>
+    <p>Auto disponibile in caso di sinistro o fermo tecnico per non fermare la tua mobilità.</p>
+  </div>
+</section>
+
+<!-- SEZIONE AUTO SOSTITUTIVE -->
+<section class="auto-sostitutive container">
+
+  <div class="disponibilita-box">
+    <p><strong>Nota sulla disponibilità:</strong> I modelli e le alimentazioni indicate rappresentano solo le opzioni. L'assegnazione effettiva del veicolo è sempre soggetta alla disponibilità in sede al momento del fermo tecnico. In caso di indisponibilità del singolo modello, cerchiamo di garantire una vettura sostitutiva di pari categoria.</p>
+  </div>
+
+  <div class="auto-grid">
+
+    <div class="auto-card">
+      <h3>Fiat 500 Hybrid</h3>
+      <span class="badge">Benzina / Ibrida</span>
+      <ul>
+        <li><strong> Autonomia:</strong>Elevata (500-600 km con un pieno)</li>
+        <li><strong> Dimensioni:</strong>Molto compatta, agile nei parcheggi stretti</li>
+        <li><strong> Ideale per:</strong>Spostamenti urbani e viaggi medio-lunghi senza soste di ricarica</li>
+      </ul>
+    </div>
+
+    <div class="auto-card">
+      <h3>Fiat 500e</h3>
+      <span class="badge">100% Elettrica</span>
+      <ul>
+        <li><strong> Autonomia:</strong>Circa 250 km</li>
+        <li><strong> Dimensioni:</strong>Ultra compatta e silenziosa</li>
+        <li><strong> Ideale per:</strong>Guida cittadina quotidiana e tragitti brevi/medio-brevi</li>
+      </ul>
+    </div>
+
+    <div class="auto-card">
+      <h3>Fiat Panda</h3>
+      <span class="badge">Benzina</span>
+      <ul>
+        <li><strong> Autonomia:</strong> Ampia autonomia per uso quotidiano</li>
+        <li><strong> Dimensioni:</strong> Spaziosa ed eclettica pur mantenendo ingombri contenuti</li>
+        <li><strong> Ideale per:</strong> Chi cerca praticità, facilità di carico e versatilità misto città/extraurbano</li>
+      </ul>
+    </div>
+
+    <div class="auto-card">
+      <h3>Mercedes GLA 200d</h3>
+      <span class="badge">Diesel</span>
+      <ul>
+        <li><strong> Autonomia:</strong> Massima copertura per lunghi percorsi</li>
+        <li><strong> Dimensioni:</strong> Ampia, abitacolo spazioso e grande bagagliaio</li>
+        <li><strong> Ideale per:</strong> Lunghi viaggi in autostrada, esigenze familiari o di grande carico</li><br>
+        <li><strong>NB. Per soli clienti Mercedes</strong></li> <br>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="cta-container">
+    <p>Verifica subito la disponibilità del veicolo per le tue date.</p>
+    <a href="tel:032446050" class="btn-auto">Chiama 0324 46050</a> 
+  </div>
+
+</section>
+
+<footer class="site-footer container">
+  <p>&copy; 2026 Carrozzeria Ali. Tutti i diritti riservati.</p>
+</footer>
+
+<script>
+const btnServizi = document.getElementById("toggleServizi");
+const sideMenu = document.getElementById("sideMenu");
+const overlay = document.getElementById("overlay");
+
+function toggleMenu() {
+  sideMenu.classList.toggle("open");
+  overlay.classList.toggle("active");
+}
+
+btnServizi.addEventListener("click", toggleMenu);
+overlay.addEventListener("click", toggleMenu);
+</script>
+
+</body>
+</html>
